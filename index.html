@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi" charset="utf-8">
+        <title></title>
+
+        <script language="javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript" src="package/jquery.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+        <script type="text/javascript" src="js/mobie.js">
+
+        </script>
+    </head>
+    <link rel="stylesheet" href="css/base.css" href="css/base.css">
+    <body>
+            <div id="sound">
+                <audio id="sound_0" src="sound/1-bgm.m4a" preload="auto" loop="loop"></audio>
+                <!-- <audio id="sound_1" src="sound/2-0airplane.m4a" preload="auto"></audio> -->
+                <audio id="sound_1" src="sound/3-1uav.m4a" preload="auto"></audio>
+                <audio id="sound_2" src="sound/4-superman-photo.m4a" preload="auto"></audio>
+                <audio id="sound_3" src="sound/4-4supermantakepeople.m4a" preload="auto"></audio>
+                <!-- <audio id="sound_3" src="sound/3-2peoplenoise1.m4a" preload="auto"></audio>
+                <audio id="sound_4" src="sound/3-2peoplenoise2.m4a" preload="auto"></audio> -->
+                <!-- <audio id="sound_5" src="sound/3-2peoplenoise3.m4a" preload="auto"></audio> -->
+                <!-- <audio id="sound_6" src="sound/4-1takephoto.m4a" preload="auto"></audio> -->
+                <!-- <audio id="sound_7" src="sound/4-3supermanflycome1.m4a" preload="auto"></audio> -->
+                <audio id="sound_4" src="sound/5-1superman-huanniu.m4a" preload="auto"></audio>
+                <!-- <audio id="sound_6" src="sound/4-4supermantakepeople.m4a" preload="auto"></audio> -->
+                <!-- <audio id="sound_6" src="sound/5-2carcome0.m4a" preload="auto"></audio> -->
+                <audio id="sound_5" src="sound/5-2carcome1.m4a" preload="auto"></audio>
+
+                <audio id="sound_6" src="sound/6-superman-cat.m4a" preload="auto"></audio>
+                <audio id="sound_7" src="sound/4-4supermantakepeople.m4a" preload="auto"></audio>
+                <audio id="sound_8" src="sound/7-1surprise.m4a" preload="auto"></audio>
+                <audio id="sound_9" src="sound/7-2supermanhitground.m4a" preload="auto"></audio>
+                <!-- <input type="button" name="" value="0sound" onclick="playsound0()" id="0sound">
+                <input type="button" name="" value="1sound" onclick="playsound1()" id="1sound">
+                <input type="button" name="" value="2sound" onclick="playsound2()" id="2sound">
+                <input type="button" name="" value="3sound" onclick="playsound3()" id="3sound">
+                <input type="button" name="" value="4sound" onclick="playsound4()" id="4sound">
+                <input type="button" name="" value="5sound" onclick="playsound5()" id="5sound">
+                <input type="button" name="" value="6sound" onclick="playsound6()" id="6sound">
+                <input type="button" name="" value="7sound" onclick="playsound7()" id="7sound">
+                <input type="button" name="" value="8sound" onclick="playsound8()" id="8sound">
+                <input type="button" name="" value="9sound" onclick="playsound9()" id="9sound">
+                <input type="button" name="" value="10sound" onclick="playsound10()" id="10sound">
+                <input type="button" name="" value="11sound" onclick="playsound10()" id="11sound">
+                <input type="button" name="" value="12sound" onclick="playsound12()" id="12sound">
+                <input type="button" name="" value="13sound" onclick="playsound13()" id="13sound">
+                <input type="button" name="" value="14sound" onclick="playsound14()" id="14sound">
+                <input type="button" name="" value="15sound" onclick="playsound15()" id="15sound"> -->
+            </div>
+            <section id='movie' >
+                <canvas id="m_canvas"></canvas>
+            </section>
+            <section id="loaderScence">
+                <section id="loadinfo">
+                    <section id="loadimg">
+                        <img src="img/supermanloading.gif" alt="">
+                    </section>
+                    <section id="loadprocess">
+                        <p>马力全开加速中...</p>
+                        <span id='process'>0%</span>
+                    </section>
+                </section>
+            </section>
+            <section id="console">
+
+            </section>
+
+            <section class="membrane" id="huodonginfoPage">
+                <section class="membrane-bg">
+                    <img src="img/close.png"  onclick="closehuodong()">
+                    <section class="typetitle">
+
+                    </section>
+                    <section class="typeface">
+                        <p>1、活动时间： 2017年11月13日00：00-2017年11月15日24：00。</p>
+
+                        <p>2、活动内容：
+                        <br>
+                        <span>活动期间，浦发银行信用卡持卡人（下称“持卡人”）通过浦发银行信用卡官方APP“浦大喜奔”、“浦发银行信用卡”微信公众号、“浦发银行信用卡”支付宝生活号、“浦发信用卡”支付宝财富号申购浦发溢存款理财产品，实际单笔转出申购金额达到人民币10万元及以上且自申购之日起首次赎回天数大于等于30个自然日，持卡人有机会获得浦大喜奔APP商城Apple专区1800元立减权益（下称“立减权益”）一份，本活动奖励总限量800份，先到先得，每位满足条件的持卡人最多获得一份活动奖励。</span>
+
+                        </p>
+
+
+                        <p>3、本活动奖励总限量800份，以申购确认时间的先后顺序为准，先到先得，赠完即止。持卡人须于2017年11月15日前绑定浦发银行信用卡官方APP“浦大喜奔”方可获得本活动奖励（即立减权益）。活动奖励发放通知将于2017年12月31日前以短信形式发送至持卡人在浦发银行信用卡中心预留的手机号码。持卡人可通过“浦大喜奔”APP查看并使用立减权益。未在规定期限内绑定浦发银行信用卡官方APP“浦大喜奔”的持卡人无法获得及使用本活动奖励的立减权益。</p>
+
+                        <p>4、获得立减权益后，持卡人可在“浦大喜奔App-生活-便民服务-领奖专区”中查看，立减权益使用方式：通过“浦大喜奔APP-生活-Apple专区”选择商品并点击购买，在订单页面中输入商城代金券码即可使用。持卡人需在立减权益有效期内使用，立减权益的使用有效期截止至2018年03月31日，立减权益有效期到期后则自动失效，且不予补发。</p>
+
+                        <p>5.本活动立减权益仅限持卡人本人使用，不得转让、售卖、不能兑换现金或其他优惠，不设找零，且一经使用，不退不换。若由于持卡人未妥善保管权益而导致权益被盗用，浦发银行信用卡中心不再予以补发且不承担与此相关的任何责任。</p>
+
+                        <p>6. 每个订单仅限使用一个立减权益，不可叠加使用，使用立减权益的订单金额必须大于立减权益金额。使用立减权益的订单如发生退货，立减权益不予退回且退款金额仅限持卡人实际支付金额（不含优惠金额）。</p>
+
+                        <p>7、本活动立减权益、商品及服务由指定供应商提供，持卡人应当自行决定是否使用该商户提供的产品或服务。浦发银行信用卡中心不对该等商户所提供的产品或服务的质量提供任何保证，浦发银行信用卡中心不就有关产品或服务引起的有关事宜或任何损害承担任何责任。</p>
+
+                        <p>8、持卡人不得倒卖所获得的立减权益，不得使用任何外挂、插件以及其他破坏活动规则、违背活动公平原则的方式参加活动，否则，浦发银行信用卡中心有权取消持卡人参与本活动的资格并收回持卡人通过本活动获得的权益。浦发银行信用卡中心有权对活动中的恶意套利行为进行鉴定并取消持卡人参加活动的资格。</p>
+
+                        <p>9、出现所持信用卡过期、被停用、管制、持卡人自行注销信用卡、对所欠信用卡和浦发银行债务不偿还、违反《上海浦东发展银行信用卡(个人卡)章程》及相关领用合约或本活动及其他相关规定的，浦发银行信用卡中心有权取消该持卡人参加本活动及获得本活动奖励的资格。</p>
+
+                        <p>10、浦发银行信用卡中心保留变更、调整、终止本活动之权利并有权调整或变更本活动规则，并于相关渠道公告后生效。</p>
+
+                        <p>11、本次活动未尽事宜，仍受《上海浦东发展银行信用卡（个人卡）章程》、相关领用合约及其他相关文件约束。</p>
+                    </section>
+                </section>
+            </section>
+    </body>
+</html>

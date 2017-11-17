@@ -1,0 +1,108 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+#movie
+{
+    margin:0 auto;
+    padding:0;
+    overflow:display;
+}
+#loaderScence
+{
+    background-image: url('../img/bkg.jpg');
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    line-height: normal;
+}
+#loadimg
+{
+    width: 201px;
+    height: 93px;
+    margin: 0 auto;
+}
+#loadprocess
+{
+    margin-top: 30px;
+    font-size: 30px;
+}
+#loadinfo
+{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+}
+#console
+{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    font-size: 35px;
+    display: none;
+}
+#sound
+{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    display: none;
+}
+.membrane{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    min-width: 300px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-image: url("../img/huodonginfo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+.membrane-bg{
+    position: relative;
+    top:26px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 675px;
+    height: 1118px;
+    color: #10385f;
+    font-weight:500;
+}
+.membrane-bg img{
+    position: absolute;
+    display: inline-block;
+    top:70px;
+    right: -10px;
+    width: 72px;
+    height: 72px;
+}
+.membrane-bg p{
+    font-size: 29.17px;
+    line-height: 37.54px;
+    margin-top: 40px;
+}
+
+.membrane-bg .typeface {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 600px;
+    height: 877px;;
+}
+.membrane-bg .typetitle {
+    width: 100%;
+    height: 250px;
+
+}
+.membrane-bg .typeface p:first-child,
+.membrane-bg .typeface p:nth-child(3){
+    margin-bottom: 10px;
+}
