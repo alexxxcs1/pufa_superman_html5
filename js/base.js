@@ -130,8 +130,6 @@ function closehuodong()
 //-----
 $(document).ready(function()        //页面加载完成阶段执行
 {
-
-
     ScreenSize.Width=window.innerWidth;
     ScreenSize.Height=window.innerHeight;
 
@@ -150,6 +148,7 @@ $(document).ready(function()        //页面加载完成阶段执行
 
     document.body.addEventListener('touchmove',function(e)
     {
+	e.preventDefault();
         pageScoll(e);
     },false);
 
