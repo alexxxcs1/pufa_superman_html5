@@ -1,7 +1,7 @@
 
 var ScreenSize={'Width':750,'Height':1138};  //初始化屏幕尺寸对象，非正确定义
 
-var baseURL = 'http://www.packy.club/newcanvas/'    //预加载域名 本地环境不用
+var baseURL = './'    //预加载域名 本地环境不用
 
 var pre_resource = { //loding界面预加载集合，预留位置
     'img':[
